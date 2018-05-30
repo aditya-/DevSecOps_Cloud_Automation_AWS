@@ -1,4 +1,4 @@
-# DevSecOps_Cloud_Automation_AWS
+# DevSecOps_Cloud_Automation_AWS ![](./wiki_assets/devsecops.png)
 This Repository Deal with **AWS Cloud Security Compliance Automation** through DevSecOps.
 
 We will perform following actions as part of **DevSecOps**
@@ -21,7 +21,21 @@ In current automation we will set-up a Continuous-Compliance/Continous-Remediati
 
 [![Continuous-Compliance/Continous-Remediation](https://raw.githubusercontent.com/aditya-/DevSecOps_Cloud_Automation_AWS/master/wiki_assets/CR1.jpg "Continuous-Compliance/Continous-Remediation")](# "Continuous-Compliance/Continous-Remediation")
 
-As per the above architecure, If any try User try perform non-complaint operation in AWS then such changes will be tracked through AWS Config using Custom Rulesets and respective remediation action(Lambda) will be triggered through SNS Topic.
+As per the above architecure, If any try User tries to perform non-complaint operation in AWS then such changes will be tracked through AWS Config using Custom Rulesets and respective remediation action(Lambda) will be triggered through SNS Topic.
+
+
+### Monitoring Security Groups with AWS Config
+
+Let's setup AWS Config Rules with an AWS Lambda function for continous-monitoring of the ingress ports associated with an EC2 security group.   The Lambda function will be triggered whenever the security group is modified.  If the ingress rule configuration differs from that which is coded in the function, the Lambda function will revert the ingress rules back to the appropriate configuration.  The activity from the Lambda function can then be viewed through Amazon CloudWatch Logs.  In an accompanying lab, Monitoring Security Groups with Amazon CloudWatch Events, you will use a different set of services to monitor security groups.  These two labs demonstrate techniques that can be used to provide additional layers of protection to infrastructure assets.
+
+##### Architecture Overview
+
+![](./wiki_assets/CR-Lambda.png)
+
+As per the above architecure, If any try User tries to perform non-complaint operations such port changes in AWS Security Group then such changes will be tracked through AWS Config using Custom Rulesets and respective remediation action(Lambda) will be triggered and security group will be reverted back with original state. 
+
+This same implementation we can replicate for multiple usecases for building Security incidents Self-healing Architecture.
+
 
 ## Adding a Rule to AWS Config
 ### With the RDK
