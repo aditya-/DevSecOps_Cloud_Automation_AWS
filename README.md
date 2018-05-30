@@ -1,4 +1,8 @@
-# DevSecOps_Cloud_Automation_AWS ![](./wiki_assets/devsecops.png)
+
+![](./wiki_assets/devsecops.png)
+
+
+# DevSecOps_Cloud_Automation_AWS 
 This Repository Deal with **AWS Cloud Security Compliance Automation** through DevSecOps.
 
 We will perform following actions as part of **DevSecOps**
