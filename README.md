@@ -19,6 +19,7 @@ In current automation we will set-up a Continuous-Compliance/Continous-Remediati
 
 ##### Architecture:
 
+[![Continuous-Compliance/Continous-Remediation](https://raw.githubusercontent.com/aditya-/DevSecOps_Cloud_Automation_AWS/master/wiki_assets/CR1.jpg "Continuous-Compliance/Continous-Remediation")](# "Continuous-Compliance/Continous-Remediation")
 
 As per the above architecure, If any try User try perform non-complaint operation in AWS then such changes will be tracked through AWS Config using Custom Rulesets and respective remediation action(Lambda) will be triggered through SNS Topic.
 
@@ -66,11 +67,20 @@ After you create the rule, it displays on the **Rules** page, and AWS Config inv
 In this process we can configure AWS Config rules to trigger perodically and notify AWS Lambda for Remdiation 
 ##### Architecture:
 
+[![SecOps](https://raw.githubusercontent.com/aditya-/DevSecOps_Cloud_Automation_AWS/master/wiki_assets/CR2.jpg "SecOps")](# "SecOps")
 
 As per the above architecure, If any try User try perform non-complaint operation in AWS then such changes will be tracked through AWS Config peridically and respective remediation action(Lambda) will be triggered.
 
 
 
 ### Automated response to remediate incidents in near real-time(**Self-Healing**)
+
+![CloudWatch_Events_SecOps](https://raw.githubusercontent.com/aditya-/DevSecOps_Cloud_Automation_AWS/master/wiki_assets/CR3.jpg "CloudWatch_Events_SecOps")
+
+![CloudWatch_Events_SecOps](https://raw.githubusercontent.com/aditya-/DevSecOps_Cloud_Automation_AWS/master/wiki_assets/CR4.jpg "CloudWatch_Events_SecOps")
+
+![CloudWatch_Events_SecOps](https://raw.githubusercontent.com/aditya-/DevSecOps_Cloud_Automation_AWS/master/wiki_assets/CR5.jpg "CloudWatch_Events_SecOps")
+
+![CloudWatch_Events_SecOps](https://raw.githubusercontent.com/aditya-/DevSecOps_Cloud_Automation_AWS/master/wiki_assets/CR6.jpg "CloudWatch_Events_SecOps")
 
 Self-healing Architecture through CloudWatch
