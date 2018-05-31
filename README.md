@@ -52,6 +52,14 @@ As per the above architecure, If any try User try perform non-complaint operatio
 
 ### Automated response to remediate incidents in near real-time(**Self-Healing**)
 
+Real-time Continous-Monitoring and Automatic Remediation
+
+### Architecture Overview
+
+![](./wiki_assets/diagramm1.png)
+
+### Architecture flow step by step
+
 ![CloudWatch_Events_SecOps](https://raw.githubusercontent.com/aditya-/DevSecOps_Cloud_Automation_AWS/master/wiki_assets/CR3.jpg "CloudWatch_Events_SecOps")
 
 ![CloudWatch_Events_SecOps](https://raw.githubusercontent.com/aditya-/DevSecOps_Cloud_Automation_AWS/master/wiki_assets/CR4.jpg "CloudWatch_Events_SecOps")
